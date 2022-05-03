@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".volume_all">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AC7D88">
+
+        <ImageView
+            android:id="@+id/img_tri_prm"
+            android:layout_width="411dp"
+            android:layout_height="326dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/triangular_prism_one" />
+
+        <TextView
+            android:id="@+id/form_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V=1/2bhl"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_tri_prm" />
+
+        <EditText
+            android:id="@+id/var1_tri_prm"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/form_tri_prm" />
+
+        <EditText
+            android:id="@+id/var3_tri_prm"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="132dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/var2_tri_prm"
+            app:layout_constraintTop_toBottomOf="@+id/form_tri_prm" />
+
+        <TextView
+            android:id="@+id/length_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Length"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var3_tri_prm"
+            app:layout_constraintEnd_toEndOf="@+id/var3_tri_prm"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="@+id/var3_tri_prm" />
+
+        <Button
+            android:id="@+id/calc_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="@+id/var3_tri_prm"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/var2_tri_prm"
+            app:layout_constraintTop_toBottomOf="@+id/ans_tri_prm" />
+
+        <TextView
+            android:id="@+id/ans_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Result:"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var3_tri_prm"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/var2_tri_prm"
+            app:layout_constraintTop_toBottomOf="@+id/var2_tri_prm" />
+
+        <EditText
+            android:id="@+id/var2_tri_prm"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/var3_tri_prm"
+            app:layout_constraintEnd_toStartOf="@+id/var3_tri_prm"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/var3_tri_prm"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/width_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Width"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var1_tri_prm"
+            app:layout_constraintEnd_toEndOf="@+id/var1_tri_prm"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/var1_tri_prm" />
+
+        <TextView
+            android:id="@+id/height_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Height"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var2_tri_prm"
+            app:layout_constraintEnd_toEndOf="@+id/var2_tri_prm"
+            app:layout_constraintHorizontal_bias="0.436"
+            app:layout_constraintStart_toStartOf="@+id/var2_tri_prm" />
+
+        <ImageView
+            android:id="@+id/img_pwr"
+            android:layout_width="410dp"
+            android:layout_height="301dp"
+            android:layout_marginTop="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calc_tri_prm"
+            app:srcCompat="@drawable/rectangle_prism_one" />
+
+        <EditText
+            android:id="@+id/var1_rec_prm"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/form_pwr" />
+
+        <EditText
+            android:id="@+id/var3_rec_prm"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="132dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/var2_rec_prm"
+            app:layout_constraintTop_toBottomOf="@+id/form_pwr" />
+
+        <TextView
+            android:id="@+id/length_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Length"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var3_rec_prm"
+            app:layout_constraintEnd_toEndOf="@+id/var3_rec_prm"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="@+id/var3_rec_prm" />
+
+        <Button
+            android:id="@+id/calc_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="@+id/var3_rec_prm"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/var2_rec_prm"
+            app:layout_constraintTop_toBottomOf="@+id/ans_rec_prm" />
+
+        <TextView
+            android:id="@+id/ans_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Result:"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var3_rec_prm"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/var2_rec_prm"
+            app:layout_constraintTop_toBottomOf="@+id/var2_rec_prm" />
+
+        <EditText
+            android:id="@+id/var2_rec_prm"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/var3_rec_prm"
+            app:layout_constraintEnd_toStartOf="@+id/var3_rec_prm"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/var3_rec_prm"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/width_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Width"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var1_rec_prm"
+            app:layout_constraintEnd_toEndOf="@+id/var1_rec_prm"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/var1_rec_prm" />
+
+        <TextView
+            android:id="@+id/height_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Height"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var2_rec_prm"
+            app:layout_constraintEnd_toEndOf="@+id/var2_rec_prm"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="@+id/var2_rec_prm" />
+
+        <TextView
+            android:id="@+id/form_pwr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V=HWL"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_pwr" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="409dp"
+            android:layout_height="363dp"
+            android:layout_marginTop="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calc_rec_prm"
+            app:srcCompat="@drawable/sphere_one" />
+
+        <Button
+            android:id="@+id/calc_sph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="@+id/var1"
+            app:layout_constraintStart_toStartOf="@+id/var1"
+            app:layout_constraintTop_toBottomOf="@+id/ans_sph" />
+
+        <TextView
+            android:id="@+id/ans_sph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="Result:"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var1"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="@+id/var1"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/var1"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Radius"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V=4/3π(r*r*r)"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

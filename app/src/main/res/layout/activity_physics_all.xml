@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AC7D88">
+
+        <EditText
+            android:id="@+id/var2_vlt"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/var1_vlt"
+            app:layout_constraintTop_toBottomOf="@+id/length_rec_prm2" />
+
+        <EditText
+            android:id="@+id/var1_vlt"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/var2_vlt"
+            app:layout_constraintEnd_toStartOf="@+id/var2_vlt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/var2_vlt" />
+
+        <TextView
+            android:id="@+id/height_rec_prm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var1_vlt"
+            app:layout_constraintStart_toStartOf="@+id/var1_vlt"
+            app:layout_constraintTop_toTopOf="@+id/length_rec_prm2" />
+
+        <TextView
+            android:id="@+id/length_rec_prm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Time"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var2_vlt"
+            app:layout_constraintStart_toStartOf="@+id/var2_vlt"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/img_spd"
+            android:layout_width="411dp"
+            android:layout_height="326dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/speed_one" />
+
+        <TextView
+            android:id="@+id/form_spd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S=dt"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_spd" />
+
+        <EditText
+            android:id="@+id/var2_spd"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="88dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/var1_spd"
+            app:layout_constraintTop_toBottomOf="@+id/form_spd" />
+
+        <EditText
+            android:id="@+id/var1_spd"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/var2_spd"
+            app:layout_constraintEnd_toStartOf="@+id/var2_spd"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/var2_spd"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/height_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Distance"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var1_spd"
+            app:layout_constraintEnd_toEndOf="@+id/var1_spd"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="@+id/var1_spd" />
+
+        <TextView
+            android:id="@+id/length_tri_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Time"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var2_spd"
+            app:layout_constraintEnd_toEndOf="@+id/var2_spd"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="@+id/var2_spd" />
+
+        <Button
+            android:id="@+id/calc_spd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="@+id/var2_spd"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/var1_spd"
+            app:layout_constraintTop_toBottomOf="@+id/ans_spd" />
+
+        <TextView
+            android:id="@+id/ans_spd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="The Speed is *"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var2_spd"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/var1_spd"
+            app:layout_constraintTop_toBottomOf="@+id/var1_spd" />
+
+        <ImageView
+            android:id="@+id/img_pwr"
+            android:layout_width="410dp"
+            android:layout_height="301dp"
+            android:layout_marginTop="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calc_spd"
+            app:srcCompat="@drawable/power_one" />
+
+        <Button
+            android:id="@+id/calc_pwr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="@+id/var2_pwr"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/var1_pwr"
+            app:layout_constraintTop_toBottomOf="@+id/ans_pwr" />
+
+        <TextView
+            android:id="@+id/ans_pwr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="The Power is *"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var2_pwr"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/var1_pwr"
+            app:layout_constraintTop_toBottomOf="@+id/var1_pwr" />
+
+        <EditText
+            android:id="@+id/var1_pwr"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/var2_pwr"
+            app:layout_constraintEnd_toStartOf="@+id/var2_pwr"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/var2_pwr"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/length_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Time"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var2_pwr"
+            app:layout_constraintEnd_toEndOf="@+id/var2_pwr"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="@+id/var2_pwr" />
+
+        <EditText
+            android:id="@+id/var2_pwr"
+            android:layout_width="189dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="76dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/var1_pwr"
+            app:layout_constraintTop_toBottomOf="@+id/form_pwr" />
+
+        <TextView
+            android:id="@+id/height_rec_prm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Work"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/var1_pwr"
+            app:layout_constraintEnd_toEndOf="@+id/var1_pwr"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="@+id/var1_pwr" />
+
+        <TextView
+            android:id="@+id/form_pwr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P=Wt"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_pwr" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="409dp"
+            android:layout_height="363dp"
+            android:layout_marginTop="58dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calc_pwr"
+            app:srcCompat="@drawable/voltage_one" />
+
+        <Button
+            android:id="@+id/calc_vlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ans_vlt" />
+
+        <TextView
+            android:id="@+id/ans_vlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="The Voltage is *"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/var2_vlt"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/var1_vlt"
+            app:layout_constraintTop_toBottomOf="@+id/var2_vlt" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V=IR"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
